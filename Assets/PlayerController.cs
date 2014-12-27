@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 	
 	static public int score;
+	static public float controlPointF;
 	
 
 	// Use this for initialization
@@ -23,8 +24,6 @@ public class PlayerController : MonoBehaviour {
 			move ();
 		}
 	}
-
-
 
 	void move()
 	{
