@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour {
 		{
 			move ();
 		}
+
+		if(transform.position.y <= -5.5f)
+			GameController.restartGame();
 	}
 
 	void move()
