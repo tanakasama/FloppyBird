@@ -30,8 +30,8 @@ public class PlayerController : MonoBehaviour {
 
 	void move()
 	{
-		rigidbody.velocity = new Vector3(0,0,0);
-		rigidbody.AddForce (new Vector3(275,200,0), ForceMode.Force);
+		GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
+		GetComponent<Rigidbody>().AddForce (new Vector3(275,200,0), ForceMode.Force);
 	}
 
 	void OnTriggerEnter(Collider other)
