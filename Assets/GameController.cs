@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour {
 		if(isStarted == false)
 		{
 			GUI.Label(new Rect(Screen.width/2, Screen.height/2-60, 150, 50), "Click Mouse to Start!");
-			if(Input.anyKeyDown)
+            if (Input.GetButtonDown("Fire1"))
 			{
 				isStarted = true;
 				Time.timeScale = 1f;
